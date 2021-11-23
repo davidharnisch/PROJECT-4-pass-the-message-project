@@ -13,19 +13,15 @@
 
 
         document.getElementById("message-form").reset();
+          
+        if (inputVal == "") {
+         document.querySelector(".feedback").style.display = "block";
 
+     setTimeout(function(){ document.querySelector(".feedback").style.display = "none"; }, 2000);
 
-
-
-
-//     function getInputValue(){
-//     // Selecting the input element and get its value 
-//     var inputVal = document.getElementById("message").value;
-
-//     console.log(inputVal)
-
-// }           
-         
+            return false;
+          }; 
+        
         
          
         })
